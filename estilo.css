@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+header {
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1587106147105-ab419e354ff7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav p {
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+.header-content {
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.header-content button {
+    color: white;
+    background: #1d66d1dd;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pacotes {
+    background: #e1e8f7;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pacotes .pacotes-title {
+    width: 100%;
+    text-align: center;
+}
+
+.pacotes-card {
+    width: 77%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.pacotes .card {
+    width: 250px;
+    height: 350px;
+    background: white;
+    border-radius: 24px 0;
+    margin: 25px auto;
+    position: relative;
+}
+
+.pacotes .card-image {
+    width: 250px;
+    height: 200px;
+    border-radius: 24px 0 0 0;
+    object-fit: cover;
+}
+
+.pacotes .card-content {
+    padding: 0 15px;
+}
+
+.pacotes .card-content ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.pacotes .card-content ul li {
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    margin: 3px 0;
+    color: gray;
+    font-weight: bold;
+}
+
+.pacotes .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.pacotes .card-content h1 {
+    font-size: 1rem;
+}
+
+.pacotes .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #F19839;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.pacotes .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1d66d1dd;
+    padding: 5px 10px;
+    border-radius: 0 8px 8px 0;
+}
+
+.pacotes .card-tag p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+.serviços {
+    padding: 15px;
+}
+
+.serviços-title{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.serviços .serviços-cards{
+    display: flex;
+    max-width: 950px;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.serviços .card {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 32px;
+}
+
+.serviços .card svg {
+    width: 68px;
+    height: 60px;
+    margin: 45px;
+    transition: all 1s;
+}
+
+.serviços .card svg:hover{
+    stroke:#1d66d1dd;
+    transform: scale(1.1);
+}
+
+
+.serviços .card h1{
+    font-weight: bold;
+}
+
+.serviços .card p{
+    color: grey;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.serviços .card-content{
+    height: 180px;
+    text-align: center;
+}
+
+.serviços button{
+    color: white;
+    background: #1d66d1dd;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 0px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+#map {
+    height: 400px;
+    width: 100%;
+  }
+
+.contato{
+    padding: 60px 22%;
+    background:#e1e8f7;
+    position: relative;
+}
+
+.contato .contato-card{
+    width: 350px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    z-index: 99;
+    border-radius: 8px;
+    
+    top: calc(50% - 140px);
+    left: calc(26% - 178px);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: -3px 2px 15px 5px #444444;
+
+}
+
+.contato .contato-card h1{
+    padding-left: 50px;
+    text-align: left;
+
+}
+.contato .contato-card li{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: grey;
+    display: flex;
+    align-items: center;
+}
+
+.contato .contato-card svg{
+    width: 16px;
+    margin: 10px;
+}
+
+
+/* RESPONSIVIDADE */
+
+/*Especial para map */
+@media (max-width: 950px) {
+    .contato{
+        padding: 60px 0;
+    }
+    .contato-card{
+        left: 40px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .contato{
+        padding: 20px 0;
+    }
+
+    .contato .contato-card{
+        position: static;
+        margin: 40px auto;
+
+    }
+}
+
+
+@media (max-width: 480px) {
+    body {
+        margin-bottom: 55px;
+    }
+    header nav ul {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        width: 100%;
+        height: 55px;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-weight: 700;
+        background: #1d66d1dd;
+    }
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contato{
+        padding: 20px 0;
+    }
+
+    .contato .contato-card{
+        position: static;
+        margin: 40px auto;
+
+    }
+}
+
+
+/*
+@media (max-width: 480px) and (max-width: 979px) {
+    header{
+        background: green;
+    }
+}
+/*
+
+
+
+/*
+@media (max-width: 1200px) {
+    header{
+        background: yellow;
+    }
+
+}
+*/
